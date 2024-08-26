@@ -2,6 +2,7 @@ import json
 from os import environ
 import re
 
+
 from app import app
 from models import db, Bakery, BakedGood
 
@@ -180,3 +181,4 @@ class TestApp:
             db.session.delete(b1)
             db.session.delete(b2)
             db.session.commit()
+            
